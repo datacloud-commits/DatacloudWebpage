@@ -30,31 +30,31 @@ const services = [
     id: 2,
     title: "Telecom Industry",
     description: "We Offer solutions that help operators improve their network performance and customer experience",
-    icon: "/bank.svg"
+    icon: "/telecom.svg"
 },
 {
     id: 3,
     title: "Ecommerce Sector",
     description: " we offer solutions that help online retailers improve their sales and customer engagement",
-    icon: "/images/icons/web-development.svg"
+    icon: "/ecommerce.svg"
 },
 {
     id: 4,
     title: "Health Care Sector",
     description: "To help hospitals and clinics improve their patient care and operational efficiency",
-    icon: "/images/icons/seo.svg"
+    icon: "health.svg"
 },
 {
     id: 5,
     title: "Supply Chain Management",
     description: "Our company offers outstanding supply chain management services.",
-    icon: "/images/icons/web-development.svg"
+    icon: "supplychain.svg"
 },
 {
     id: 6,
     title: "Insurance Sector",
     description: "To help insurance companies improve their underwriting and claims processing",
-    icon: "/images/icons/seo.svg"
+    icon: "insurance.svg"
 },
 ]
  
