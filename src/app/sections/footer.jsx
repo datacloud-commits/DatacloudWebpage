@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import ContactForm from "./contactForm";
 
@@ -26,7 +27,7 @@ const Footer = () => {
                             <p className="text-gray-700 dark:text-gray-300 mt-4">
                                 2212 Boboli Ct, Celina, TX 75009
                             </p>
-                            <p className="text-gray-700 dark:text-gray-300">Phone: +1 (123) 456-7890</p>
+                            <p className="text-gray-700 dark:text-gray-300">Phone: +1 (203) 701-9410</p>
                             <p className="text-gray-700 dark:text-gray-300">Email: hr@datacloudcorp.com</p>
                         </div>
 
@@ -34,10 +35,10 @@ const Footer = () => {
                         <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                             <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Quick Links</h1>
                             <ul className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-                                <li><Link href="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</Link></li>
-                                <li><Link href="/services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Our Services</Link></li>
+                                <li><Link href="/#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</Link></li>
+                                <li><Link href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Our Services</Link></li>
                                 <li><Link href="/careers" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Careers</Link></li>
-                                <li><Link href="/contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Us</Link></li>
+                                <li><Link href="/#contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Us</Link></li>
                             </ul>
                         </div>
 
@@ -50,7 +51,7 @@ const Footer = () => {
                                 Looking to discuss how we can help your business thrive? Schedule a call with our team to explore tailored solutions for your needs.
                             </p>
                             <a
-                                href="/schedule-call"
+                                href="/bookcall"
                                 className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white text-center rounded-md hover:bg-blue-700 dark:hover:bg-blue-500 transition-all">
                                 Schedule a Call
                             </a>
