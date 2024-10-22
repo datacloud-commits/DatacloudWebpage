@@ -1,3 +1,5 @@
+"use client"
+import { motion } from "framer-motion";
 import Image from "next/image"
  
 const ServiceCard = ({ title, description, icon }) => {
@@ -65,10 +67,16 @@ return (
             <div className="flex flex-col gap-5">
                 <div className="space-y-4 max-w-xl">
                     <span className="rounded-lg bg-blue-50 dark:bg-gray-900 px-2.5 py-1 text-xs font-semibold tracking-wide text-blue-800 dark:text-gray-100">Services</span>
-                    <h1 className="text-3xl font-semibold text-blue-950 dark:text-gray-200 md:text-4xl xl:text-5xl leading-tight">Sectors we provide services in</h1>
+                    <motion.h1
+          className="text-3xl font-semibold text-blue-950 dark:text-gray-200 md:text-4xl xl:text-5xl leading-tight"
+          initial={{ opacity: 0, y: 50 }}  // Start faded out and offset down
+          whileInView={{ opacity: 1, y: 0 }}  // Fade in and move to original position
+          transition={{ duration: 1 }}  // Animation duration
+          viewport={{ once: true }}  // Trigger animation only once
+        >Sectors we provide services in</motion.h1>
+                   
                 </div>
-                <p className="text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.</p>
+                
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:items-stretch">
                 {
